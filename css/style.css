@@ -1,0 +1,271 @@
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ /*  Instructions pour les couleurs pour les divers parties */
+
+ :root {
+     -blanc: #fff;
+     -gris-clair: #ddd;
+     -gris-transparant: rgba(0, 0, 0, 0.212);
+     -gris: rgb(155, 155, 155);
+     -gris-fonce: rgb(94, 94, 94);
+     -bleu-clair: #c1d2d9;
+     -bleu-fonce: #7bafc9;
+     -orange: orange;
+ }
+
+ article {
+     /*  les articles et les p sont en font family Verdana */
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: rgb(94, 94, 94);
+ }
+
+ /* Font Family pour le paragraphe  */
+
+ p {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: rgb(155, 155, 155);
+ }
+
+ h2 {
+     font-family: 'Ephesis', cursive;
+     color: #fff;
+     padding: 15px;
+     background-color: #7bafc9;
+ }
+
+ .h2verdana {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px;
+     color: #7bafc9;
+     background-color: #c1d2d9;
+     height: 100px;
+ }
+
+ .titre{
+     position: relative;
+ }
+   
+h3{
+position: absolute;
+margin-top: 50px;
+
+color: #fff;
+
+
+}
+
+ /*  Mise en forme de la Nav  */
+
+ nav {
+     background-color: var(-bleu-fonce);
+     display: flex;
+     justify-content: right;
+     align-content: space-between;
+ }
+
+ nav {
+     background-color: #7bafc9;
+     height: 60px;
+ }
+
+ nav a {
+     display: flex;
+     text-decoration: none;
+     justify-content: space-between;
+     padding: 10px;
+     margin: 10px;
+     color: #fff;
+     font-size: 15px;
+ }
+
+
+ /* Border raidius autour de Contact  */
+
+ .contactradius {
+     border-radius: 50%;
+     border: 1px solid #fff;
+     padding: 15px;
+ }
+
+ h1 {
+     background: url(../img/bg.jpg) no-repeat center/cover;
+     height: 80vh;
+     text-align: center;
+     font-family: 'Ephesis', cursive;
+     color: #fff;
+     font-size: 80px;
+ }
+
+ h3 {
+     position: absolute;
+     top: 40px;
+     left: 40px;
+ }
+
+ /*  Traitement image  */
+
+ img {
+     max-width: 100%;
+ }
+
+ /* class prix position */
+
+ .imgrelative {
+     position: relative;
+ }
+
+ .prixabsolute {
+     position: absolute;
+     top: 10px;
+     color: black;
+     border: 1px solid white;
+     height: 30px;
+     width: 60px;
+     background-color: #fff;
+     margin: 10px;
+ }
+
+ /*  CSS/mise en forme Footer   */
+
+ footer {
+     display: flex;
+     background: #7bafc9;
+     margin-top: 50 px;
+     height: 400px;
+ }
+
+
+
+footer a {
+    color: #fff;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+
+ .pfooter {
+     color: #fff;
+     justify-content: center;
+     padding: 20px;
+ }
+
+ .pcoyright {
+     display: block;
+     color: #fff;
+     border-top: 1px solid #fff;
+background-color: #7bafc9;
+margin:auto 0;
+     
+ }
+
+ .socialmedia i {
+     /*  les médias sociaux  */
+     padding: 20px;
+     color: #fff;
+     margin: auto 0;
+     padding: 30px;
+     text-transform:none ;
+ }
+
+
+
+
+
+
+
+
+ /* mx-auto :centrer un contenu, x signifie  */
+
+ .row {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* Flex-wrap : wrap va permettre de donner comme indication que s'il n'y a pas assez de place le contenu doit aller à la ligne */
+ }
+
+ .col-1 {
+     width: 8.33333%;
+     padding: 4px;
+ }
+
+ .col-2 {
+     width: 16.666666%;
+     padding: 4px;
+ }
+
+ .col-3 {
+     width: 25%;
+     padding: 4px;
+ }
+
+ .col-4 {
+     width: 33.333333%;
+     padding: 50px;
+ }
+
+ .col-5 {
+     width: 41.666666%;
+     padding: 4px
+ }
+
+ .col-6 {
+     width: 50%;
+     padding: 4px;
+ }
+
+ .col-7 {
+     width: 58%;
+     padding: 4px;
+ }
+
+ .col-8 {
+     width: 66.666666%;
+     padding: 4px;
+ }
+
+ .col-9 {
+     width: 75%;
+     padding: 4px;
+ }
+
+ .col-10 {
+     width: 83.666666%;
+     padding: 4px;
+ }
+
+ .col-11 {
+     width: 91.666666%;
+     padding: 4px;
+ }
+
+ .col-12 {
+     width: 100%;
+     padding: 50px;
+ }
+
+ @media screen and (max-width: 991px) {
+     main {
+         width: 100%;
+     }
+     
+     footer {
+         flex-direction: column;
+     }
+     .pfooter {
+         flex-direction: column;
+     }
+
+      header nav a{
+       
+         flex-direction: column;
+         margin: 2px;
+         padding: 2px;
+       
+     }
+ }
